@@ -1,151 +1,413 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>主页信息</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style type="text/css">
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        body,html{
-            width: 100%;
-            height: 100%;
-        }
-        nav{
-            width: 100%;
-        }
-        a {
-            text-decoration: none;
-            color: black;
-            font-size: 20px;
-        }
-        #search{
-            margin-top: -20px;
-        }
-        .search-wrap {
+<html lang="zxx">
 
-            height:300px;
-            background-image: url(seriesHead.jpg);
-        }
-        .search-wrap .search-area {
-            text-align: center;
-        }
-        .search-wrap .search-area .search-area-context {
-            padding-top: 30px;
-        }
-        .one{
-            padding-top: 10px;
-        }
-        .flex-container {
-            display: -webkit-flex;
-            display: flex;
-            -webkit-flex-direction: column;
-            flex-direction: column;
-            width: 100%;
-        }
-        .flex-item {
-            border:whitesmoke solid 1px;
-            border-radius:10px;
-            background: url("../images/leimu.jpg");
-            width: 95%;
-            height: 100px;
-            margin: 10px;
-            box-shadow: 5px 5px 3px #888888;
-        }
-        .flex-item h3{
-            padding-top: 10px;
-            margin-bottom: 10px;
-            margin-top: 10px;
-            margin-left: 10px;
-        }
-    </style>
+<head>
+	<title>Home</title>
+
+	<!--meta tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--//meta tags ends here-->
+	<!--booststrap-->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+	<!--//booststrap end-->
+	<!-- font-awesome icons -->
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<!-- //font-awesome icons -->
+<!-- Nav-CSS -->	
+<link href="css/nav.css" rel="stylesheet" type="text/css" media="all" />
+ <script src="js/modernizr.custom.js"></script>
+<!-- //Nav-CSS -->	
+	<link rel="stylesheet" href="css/lightbox.css">
+	<!--gallery-->
+
+	<!--stylesheets-->
+	<link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+	<!--//stylesheets-->
+
+	<link href="http://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+
 </head>
 <body>
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Brand</a>
-        </div>
+<!-- navigation section -->
+<!-- //banner -->
+<!--about -->
+<div class="about" id="about">
+	<div class="container">
+		<div class="col-md-4 about-left ">
+			<img src="images/ab2.jpg" class="img-responsive" alt="">
+		</div>
+		<div class="col-md-7 about-right">
+			<div class="about-me">
+				<h2>孤舟 </h2>
+				<h4>等清风来 &amp; 盼梅花开</h4>
+			</div>
+			<div class="w3layouts_more-buttn">
+				<p>一梦荒唐，惊梦半响，几人难思量；
+					<br/>一段戏腔，春衫彷徨，凭谁解红妆；
+					<br/>一曲终章，过往泛黄，故人重开场；
+					<br/>一世不朽，年少轻狂，何不两相忘。
+				</p>
+				<div class="buttn-about">
+					<a href="#services">Read More</a>
+				</div>
+				<div class="buttom-social-grids">
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
-<div class="container-fluid">
-    <section id="search">
-        <div class="search-wrap">
-            <div class="search-area container">
-                <h1 class="search-area-header" style="color: white;">Learn about interesting notes</h1>
-                <h3 class="search-area-tag-line" style="color: white;">了解感兴趣的笔记</h3>
-                <form>
-                    <div class="row form-group-lg search-area-context">
-                        <div class="col-md-9 col-md-offset-1 col-xs-7 col-xs-offset-1"><input type="text" class="form-control" placeholder="搜索感兴趣的笔记" id="seach"></div>
-                        <div class="col-md-2 search-area-button"><button type="button" class="btn btn-default btn-lg button" value="搜索" id="btnSeach">搜索</button></div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-    <div class="row">
-    <div class="col-md-7 col-md-offset-2 one ">
-        <div class="tab-content">
-                <div class="flex-container">
-                    <div class="flex-item">
-                        <h3><a href="./mobile/3D家居.html">3D家居</a></h3>
-                    </div>
-                    <div class="flex-item">
-                        <h3><a href="./mobile/刮刮卡.html">刮刮卡</a></h3>
-                    </div>
-                    <div class="flex-item">
-                        <h3><a href="./mobile/music.html">哔哩哔哩</a></h3>
-                    </div>
-                </div>
-        </div>
-    </div>
-    </div>
+
+				</div>
+			</div>
+
+		</div>
+		<div class="clearfix"> </div>
+
+		<div class="clearfix"> </div>
+
+	</div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
-</body>
+<!--//about -->
+<div class="services" id="services">
+	<div class="container">
+		<h3 class="title clr">Services</h3>
+		<div class="banner-bottom-girds">
+			<div class="col-md-7 my-ser-left">
+				<div class="white-shadow">
+					<div class=" col-md-3 col-sm-3 col-xs-3 service-num-left">
+						<h6>1</h6>
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-9 service-info-left">
+						<h4>山中何时？松花酿酒，春水煎茶</h4>
+						<p>张可久</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="white-shadow">
+					<div class=" col-md-3 col-sm-3 col-xs-3 service-num-left">
+						<h6>2</h6>
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-9 service-info-left">
+						<h4>赌书消得泼茶香，当时只道是寻常</h4>
+						<p>纳兰性德</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="white-shadow">
+					<div class=" col-md-3 col-sm-3 col-xs-3 service-num-left">
+						<h6>3</h6>
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-9 service-info-left">
+						<h4>白落梅浮云吹作雪，世味煮成茶</h4>
+						<p>白落梅</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div><div class="white-shadow">
+				<div class=" col-md-3 col-sm-3 col-xs-3 service-num-left">
+					<h6>4</h6>
+				</div>
+				<div class="col-md-9 col-sm-9 col-xs-9 service-info-left">
+					<h4>欲买桂花同载酒，终不似，少年游</h4>
+					<p>刘过</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--// services-->
+<div class="experience" id="experience">
+	<div class="container">
+		<div class="education">
+			<div class="col-md-5 exp-info-right">
+				<h4>experience</h4>
+			</div>
+			<div class="col-md-6 col-md-offset-1 education-matter">
+				<div class="edu-right ">
+					<h6>龙族</h6>
+					<h5>如果你不了解自己的过去，怎么知道未来要往哪个方向走</h5>
+					<p>江南</p>
+				</div>
+				<div class="edu-right back-shadow clr-green">
+					<h6>龙族</h6>
+					<h5>孤独是与生俱来的种子，萌发于爱上一个人的瞬间</h5>
+					<p>江南</p>
+				</div>
+
+				<div class="edu-right ">
+					<h6>龙族</h6>
+					<h5>所谓错过，不是错了，而是过了</h5>
+					<p>江南</p>
+				</div>
+				<div class="edu-right back-shadow clr-green">
+					<h6>龙族</h6>
+					<h5>这个世界很温柔，但它不喜欢我</h5>
+					<p>江南</p>
+				</div>
+
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="experience-info">
+			<div class="col-md-6 exp-matter">
+				<div class="exp-left">
+					<h6>龙族</h6>
+					<h5>让你的微笑和悲伤成为我这一生的刻痕</h5>
+					<p>江南</p>
+				</div>
+				<div class="exp-left back-shadow clr-green">
+					<h6>龙族</h6>
+					<h5>爱唱歌的女孩被埋在花下了，连带着她的野心、残暴和谜一样的往事。</h5>
+					<p>江南</p>
+				</div>
+
+				<div class="exp-left">
+					<h6>龙族</h6>
+					<h5>我们都是小怪兽，有一天会被正义的奥特曼杀死。</h5>
+					<p>江南</p>
+				</div>
+				<div class="exp-left back-shadow clr-green">
+					<h6>龙族</h6>
+					<h5>世间一切幸福，皆月影中一现的昙花；唯有孤独与痛，常伴在黄泉深处。</h5>
+					<p>江南</p>
+
+				</div>
+			</div>
+			<div class="col-md-5 col-md-offset-1 exp-info-right">
+				<h4>experience</h4>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="education">
+			<div class="col-md-5 exp-info-right">
+				<h4>experience</h4>
+			</div>
+			<div class="col-md-6 col-md-offset-1 education-matter">
+				<div class="edu-right ">
+					<h6>龙族</h6>
+					<h5>什么是死？
+是终点，是永诀，是不可挽回，是再也握不到的手、感觉不到的温度，再也说不出口的“对不起”。</h5>
+					<p>江南</p>
+				</div>
+				<div class="edu-right back-shadow clr-green">
+					<h6>龙族</h6>
+					<h5>有些话只是说说而已……比如我爱你……比如我等你。</h5>
+					<p>江南</p>
+				</div>
+
+				<div class="edu-right ">
+					<h6>龙族</h6>
+					<h5>或许是不知梦的缘故，流离之人追逐幻影。</h5>
+					<p>江南</p>
+				</div>
+				<div class="edu-right back-shadow clr-green">
+					<h6>龙族</h6>
+					<h5>他哭泣他歌唱，是魔鬼，是神明，是绝世的戏子，声情并茂</h5>
+					<p>江南</p>
+				</div>
+
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="experience-info">
+			<div class="col-md-6 exp-matter">
+				<div class="exp-left">
+					<h6>龙族</h6>
+					<h5>不会有结果的希望都是有毒的，就像小女孩用来暖和自己的火柴......可是该燃烧的，还是会烧起来......</h5>
+					<p>江南</p>
+				</div>
+				<div class="exp-left back-shadow clr-green">
+					<h6>龙族</h6>
+					<h5>有时候人只需要一只温暖的手的触摸,就像是拥有了整个世界。</h5>
+					<p>江南</p>
+				</div>
+
+				<div class="exp-left">
+					<h6>龙族</h6>
+					<h5>命运这种东西，生来就是要被踏于足下的，如果你还未有力量反抗它，只需怀着勇气等待。</h5>
+					<p>江南</p>
+				</div>
+				<div class="exp-left back-shadow clr-green">
+					<h6>龙族</h6>
+					<h5>因为不爱，所以都错。</h5>
+					<p>江南</p>
+
+				</div>
+			</div>
+			<div class="col-md-5 col-md-offset-1 exp-info-right">
+				<h4>experience</h4>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+
+<!-- gallery-->
+<div id="gallery" class="gallery">
+	<div class="container">
+		<h3 class="title clr">幻想乡</h3>
+		<div class="gallery-info">
+			<div class="col-md-3 col-sm-6 col-xs-6 gallery-grids">
+				<a href="images/g1.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+					<img src="images/g1.jpg" alt="" class="img-responsive zoom-img">
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6 gallery-grids">
+				<a href="images/g2.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+					<img src="images/g2.jpg" alt="" class="img-responsive zoom-img">
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6 gallery-grids">
+				<a href="images/g3.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+					<img src="images/g3.jpg" alt="" class="img-responsive zoom-img">
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6 gallery-grids">
+				<a href="images/g4.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+					<img src="images/g4.jpg" alt="" class="img-responsive zoom-img">
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6 gallery-grids grid-mdl">
+				<a href="images/g5.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+					<img src="images/g5.jpg" alt="" class="img-responsive zoom-img">
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6 gallery-grids  grid-mdl">
+				<a href="images/g6.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+					<img src="images/g6.jpg" alt="" class="img-responsive zoom-img">
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6 gallery-grids  grid-mdl">
+				<a href="images/g7.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+					<img src="images/g7.jpg" alt="" class="img-responsive zoom-img">
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6 gallery-grids  grid-mdl">
+				<a href="images/g8.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+					<img src="images/g8.jpg" alt="" class="img-responsive zoom-img">
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6 gallery-grids  grid-mdl">
+				<a href="images/g9.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+					<img src="images/g9.jpg" alt="" class="img-responsive zoom-img">
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6 gallery-grids  grid-mdl">
+				<a href="images/g12.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+					<img src="images/g12.jpg" alt="" class="img-responsive zoom-img">
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6 gallery-grids  grid-mdl">
+				<a href="images/g10.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+					<img src="images/g10.jpg" alt="" class="img-responsive zoom-img">
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6 gallery-grids  grid-mdl">
+				<a href="images/g11.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+					<img src="images/g11.jpg" alt="" class="img-responsive zoom-img">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //gallery-->
+<!--contact-->
+
+
+<footer>
+	<p>Copyright © 2018.Company name All rights reserved.</p>
+</footer>
+<!--js working-->
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--//js working-->
+<!--nav menu-->
+<script src="js/classie.js"></script>
+<script src="js/demo1.js"></script>
+<!-- //nav menu-->
+<!-- gallery -->
+<script src="js/lightbox-plus-jquery.min.js"></script><div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href=""></a><a class="lb-next" href=""></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div>
+<!-- //gallery -->
+<!--banner-->
+
+<script src="js/responsiveslides.min.js"></script>
+
+<script>
+	// You can also use "$(window).load(function() {"
+	$(function () {
+		// Slideshow 4
+		$("#slider4").responsiveSlides({
+			auto: true,
+			pager: false,
+			nav: true,
+			speed: 900,
+			namespace: "callbacks",
+			before: function () {
+				$('.events').append("<li>before event fired.</li>");
+			},
+			after: function () {
+				$('.events').append("<li>after event fired.</li>");
+			}
+		});
+
+	});
+</script>
+<!--// banner-->
+<!-- OnScroll-Number-Increase-JavaScript -->
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.countup.js"></script>
+<script>
+	$('.counter').countUp();
+</script>
+<!-- //OnScroll-Number-Increase-JavaScript -->
+
+<!-- start-smoth-scrolling -->
+<script src="js/move-top.js"></script>
+<script src="js/easing.js"></script>
+<script>
+	jQuery(document).ready(function ($) {
+		$(".scroll").click(function (event) {
+			event.preventDefault();
+			$('html,body').animate({
+				scrollTop: $(this.hash).offset().top
+			}, 900);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- here stars scrolling icon -->
+<script>
+	$(document).ready(function () {
+
+		var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear'
+		};
+
+
+		$().UItoTop({
+			easingType: 'easeOutQuart'
+		});
+
+	});
+</script>
+<!-- //here ends scrolling icon -->
+
+
+<a href="#" id="toTop" style="display: none;"><span id="toTopHover"></span>To Top</a></body>
+
 </html>
